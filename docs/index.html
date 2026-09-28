@@ -127,6 +127,7 @@
   /* 바닥글 */
   footer { border-top: 1px solid var(--crust); padding: 36px 0 56px; color: var(--wall); font-size: .92rem; }
   footer .row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; }
+  footer .links { display: flex; flex-wrap: wrap; gap: 8px 20px; }
 
   @media (max-width: 880px) {
     section { padding: 64px 0; }
@@ -317,7 +318,11 @@
 <footer>
   <div class="wrap row">
     <span>Remote <span data-version>1.0.6</span>. 설치 파일은 <a href="https://github.com/BlackBuddle/Remote-releases/releases">GitHub 릴리즈</a>에서 받습니다.</span>
-    <a href="https://github.com/BlackBuddle/Remote-releases#readme">설명서(README)</a>
+    <span class="links">
+      <a href="https://github.com/BlackBuddle/Remote-releases#readme">설명서(README)</a>
+      <a href="https://github.com/BlackBuddle/Remote-releases/blob/main/LICENSE">사용 조건(LICENSE)</a>
+      <a href="https://github.com/BlackBuddle/Remote-releases/blob/main/THIRD_PARTY_NOTICES">오픈소스 고지</a>
+    </span>
   </div>
 </footer>
 

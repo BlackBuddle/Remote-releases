@@ -182,3 +182,8 @@ Remote는 개발자의 서버나 Firebase를 쓰지 않고, **각자 자기 Fire
 ## 이 저장소에 대해
 
 이 저장소는 설치 파일 배포용입니다. 소스 코드는 비공개이고, 릴리즈의 "Source code (zip/tar.gz)" 링크는 GitHub가 모든 릴리즈에 자동으로 붙이는 것으로 이 README만 들어 있습니다.
+
+## 라이선스
+
+- 사용 조건: [LICENSE](LICENSE) — 누구나 무료로 설치해 쓸 수 있습니다. 설치 파일의 재배포·판매, 수정·역설계는 허락 없이 할 수 없습니다.
+- 함께 들어 있는 오픈소스와 Google SDK의 라이선스: [THIRD_PARTY_NOTICES](THIRD_PARTY_NOTICES)

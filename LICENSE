@@ -1,0 +1,58 @@
+Remote 사용 조건 (Remote Software License)
+
+Copyright (c) 2026 BlackBuddle. All rights reserved.
+
+이 조건은 이 저장소(BlackBuddle/Remote-releases)에 게시된 Remote 설치 파일
+(.msi, .exe, .apk, .deb)과 그 안에 든 프로그램(이하 "소프트웨어"), 그리고 이 저장소의
+문서와 소개 페이지에 적용됩니다. 소프트웨어의 소스 코드는 공개하지 않습니다.
+
+1. 사용 허락
+   누구나 소프트웨어를 무료로 내려받아 개인 또는 업무 목적으로 설치하고 사용할 수 있습니다.
+
+2. 하지 말아야 할 일
+   다음은 저작권자의 서면 허락 없이는 할 수 없습니다.
+   - 소프트웨어 설치 파일을 다른 곳에 다시 올리거나, 판매하거나, 다른 이름으로 배포하는 일
+     (이 저장소나 소개 페이지의 링크를 공유하는 것은 자유입니다)
+   - 소프트웨어를 수정하거나, 역컴파일·역설계하는 일
+     (관련 법률이 명시적으로 허용하는 범위는 예외입니다)
+   - 소프트웨어에 포함된 저작권 표시나 이 조건을 지우는 일
+
+3. 사용자의 책임
+   - 소프트웨어는 사용자가 직접 만든 Firebase 프로젝트를 씁니다. 그 프로젝트의 요금과
+     Google·Firebase 약관은 사용자에게 적용됩니다.
+   - 원격 제어는 본인 소유이거나 사용 허락을 받은 컴퓨터에만 하세요.
+
+4. 제3자 구성 요소
+   소프트웨어에는 오픈소스를 비롯한 제3자 구성 요소가 들어 있습니다. 그 목록과 라이선스는
+   THIRD_PARTY_NOTICES 파일에 있습니다. 각 구성 요소에는 그 라이선스가 우선 적용되며,
+   이 조건은 그 라이선스가 사용자에게 주는 권리를 제한하지 않습니다.
+
+5. 보증 없음과 책임 제한
+   소프트웨어는 "있는 그대로" 제공되며, 상품성·특정 목적 적합성·권리 비침해를 포함해
+   어떤 보증도 하지 않습니다. 관련 법률이 허용하는 최대 범위에서, 저작권자는 소프트웨어의
+   사용이나 사용 불가로 생긴 어떤 손해(데이터 손실, 업무 중단 등)에도 책임지지 않습니다.
+
+6. 기타
+   이 조건은 예고 없이 바뀔 수 있으며, 새 버전의 소프트웨어에는 그때의 조건이 적용됩니다.
+   한국어와 영어 내용이 다르면 한국어가 우선합니다.
+
+-------------------------------------------------------------------------------
+
+English summary (the Korean text above prevails)
+
+Copyright (c) 2026 BlackBuddle. All rights reserved.
+
+1. You may download, install and use the Software free of charge for personal or
+   business purposes.
+2. Without written permission you may not redistribute, re-upload, sell or rebrand
+   the installers (sharing links to this repository is fine); modify, decompile or
+   reverse engineer the Software except where the law expressly allows it; or remove
+   copyright notices or these terms.
+3. The Software uses a Firebase project that you create yourself; its costs and the
+   Google/Firebase terms apply to you. Only control computers you own or are
+   allowed to control.
+4. Third-party components are listed in THIRD_PARTY_NOTICES. Their own licenses
+   apply to them, and nothing here limits the rights those licenses grant you.
+5. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND. TO THE MAXIMUM
+   EXTENT PERMITTED BY LAW, THE COPYRIGHT HOLDER IS NOT LIABLE FOR ANY DAMAGES
+   ARISING FROM THE USE OF OR INABILITY TO USE THE SOFTWARE.
