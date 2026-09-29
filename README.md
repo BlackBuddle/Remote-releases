@@ -187,3 +187,4 @@ Remote는 개발자의 서버나 Firebase를 쓰지 않고, **각자 자기 Fire
 
 - 사용 조건: [LICENSE](LICENSE) — 누구나 무료로 설치해 쓸 수 있습니다. 설치 파일의 재배포·판매, 수정·역설계는 허락 없이 할 수 없습니다.
 - 함께 들어 있는 오픈소스와 Google SDK의 라이선스: [THIRD_PARTY_NOTICES](THIRD_PARTY_NOTICES)
+- 개인정보처리방침: https://blackbuddle.github.io/Remote-releases/privacy.html

@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보처리방침 — Remote</title>
+<meta name="description" content="Remote(PC 호스트와 안드로이드 앱)가 어떤 정보를 어디에서 처리하는지, 광고(Google AdMob)가 무엇을 수집하는지 설명합니다.">
+<meta name="theme-color" content="#2B2015">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="app_icon.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  /* 소개 페이지(index.html)와 같은 "슈크림빵" 팔레트 */
+  :root {
+    --night: #2B2015;
+    --umber: #4B3A2A;
+    --crust: #6E4428;
+    --gold: #C88A4A;
+    --gold-hi: #E6B873;
+    --sugar: #EFE6D3;
+    --wall: #8B7E68;
+    --shirt: #93A2AA;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--night); color: var(--sugar);
+    font-family: Pretendard, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    font-size: 17px; line-height: 1.8; word-break: keep-all; overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--gold-hi); text-underline-offset: 3px; }
+  a:hover { color: var(--sugar); }
+  :focus-visible { outline: 2px solid var(--gold-hi); outline-offset: 3px; border-radius: 6px; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+  header { border-bottom: 1px solid var(--crust); }
+  header .wrap { display: flex; align-items: center; gap: 10px; padding-block: 16px; }
+  header a { display: inline-flex; align-items: center; gap: 10px; color: var(--sugar); text-decoration: none; font-weight: 700; }
+  header img { width: 32px; height: 32px; border-radius: 8px; }
+  main { padding-block: 48px 72px; }
+  h1 { font-size: clamp(1.8rem, 5vw, 2.4rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.25; margin: 0 0 .3em; }
+  h2 { font-size: 1.3rem; font-weight: 800; margin: 2.2em 0 .6em; }
+  p, ul { margin: 0 0 1em; }
+  ul { padding-left: 1.2em; }
+  li { margin-bottom: .4em; }
+  .date { color: var(--shirt); margin-bottom: 2em; }
+  .summary { background: var(--umber); border-radius: 14px; padding: 18px 22px; }
+  .summary ul { margin: 0; }
+  .table { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--crust); }
+  th { color: var(--gold-hi); font-weight: 700; white-space: nowrap; }
+  td:first-child { font-weight: 600; }
+  code { font-size: .9em; background: var(--umber); padding: 1px 6px; border-radius: 5px; }
+  .en { color: var(--shirt); font-size: .95rem; }
+  footer { border-top: 1px solid var(--crust); color: var(--wall); font-size: .92rem; }
+  footer .wrap { padding-block: 28px 44px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a href="./"><img src="app_icon.png" alt="">Remote</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>개인정보처리방침</h1>
+  <p class="date">시행일: 2026년 9월 29일</p>
+
+  <p>이 방침은 Remote의 PC 호스트(Windows·리눅스)와 안드로이드 앱(이하 "Remote")이 어떤 정보를 어디에서 처리하는지 설명합니다. Remote는 개인 개발자 BlackBuddle이 만들어 배포합니다.</p>
+
+  <div class="summary">
+    <ul>
+      <li>개발자는 서버를 운영하지 않으며, 사용자의 계정·화면·입력 정보를 받지 않습니다.</li>
+      <li>로그인과 PC 목록은 <strong>사용자가 직접 만든 Firebase 프로젝트</strong>에 저장됩니다.</li>
+      <li>PC 화면과 입력은 저장되지 않고, PC와 폰이 암호화된 연결로 직접 주고받습니다.</li>
+      <li>안드로이드 앱은 Google AdMob 광고를 보여 주며, Google이 광고를 위해 광고 ID 등을 수집할 수 있습니다.</li>
+    </ul>
+  </div>
+
+  <h2>처리하는 정보와 저장 위치</h2>
+  <div class="table">
+    <table>
+      <thead><tr><th>정보</th><th>어디에</th><th>왜</th></tr></thead>
+      <tbody>
+        <tr><td>구글 계정 이메일·이름·프로필 사진</td><td>사용자의 Firebase 프로젝트(Authentication)와 각 기기</td><td>같은 계정의 PC와 폰을 서로 알아보게 하려고</td></tr>
+        <tr><td>Firebase 설정 값, 로그인 정보</td><td>각 기기 안. 폰은 안드로이드 키 저장소로 암호화하고, Windows PC는 그 사용자만 풀 수 있게 암호화합니다</td><td>다음 실행 때 다시 설정·로그인하지 않게 하려고</td></tr>
+        <tr><td>PC 이름, 온라인 여부, 실행 식별자, 마지막 갱신 시각</td><td>사용자의 Firebase Realtime Database</td><td>폰에 PC 목록과 상태를 보여 주려고</td></tr>
+        <tr><td>연결 정보(IP 주소를 포함한 WebRTC 연결 제안·후보)</td><td>연결을 맺는 동안 사용자의 Realtime Database를 거쳐 주고받습니다</td><td>PC와 폰을 직접 연결하려고</td></tr>
+        <tr><td>PC 화면, 마우스·키보드 입력</td><td>저장하지 않습니다. PC와 폰 사이의 암호화된 직접 연결(WebRTC)로만 오갑니다</td><td>원격 제어</td></tr>
+        <tr><td>주고받은 데이터 양</td><td>폰 안</td><td>앱의 "사용량" 화면</td></tr>
+        <tr><td>동작 기록(로그)</td><td>PC의 사용자 폴더 <code>.remotehost</code> 안</td><td>문제가 생겼을 때 원인을 찾으려고</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>함께 쓰는 외부 서비스</h2>
+  <ul>
+    <li><strong>Google Firebase·Google 로그인</strong> — 사용자 본인의 Firebase 프로젝트에서 동작하며, 그 데이터에는 사용자가 동의한 Google·Firebase 약관이 적용됩니다. 개발자는 사용자의 Firebase 프로젝트에 접근할 수 없습니다. <a href="https://firebase.google.com/support/privacy">Firebase 개인정보 보호</a></li>
+    <li><strong>Google STUN 서버(<code>stun.l.google.com</code>)</strong> — PC와 폰이 직접 연결할 주소를 찾을 때 각 기기의 공인 IP 주소를 확인하는 데 씁니다.</li>
+    <li><strong>GitHub</strong> — 설치된 Windows 호스트가 새 버전을 확인하고 내려받을 때 GitHub에 접속합니다. 이때 GitHub가 PC의 IP 주소를 받을 수 있습니다.</li>
+    <li><strong>Google AdMob(안드로이드 앱)</strong> — 원격 화면 위쪽에 배너 광고를 보여 줍니다. Google은 광고를 보여 주고 측정하며 부정 사용을 막기 위해 광고 ID, IP 주소, 기기·앱 정보, 광고를 보거나 누른 기록을 수집할 수 있습니다. 자세한 내용은 <a href="https://policies.google.com/technologies/partner-sites">Google 파트너 사이트·앱의 정보 사용 방식</a>에 있습니다. 광고 ID는 안드로이드 설정의 <strong>Google → 광고</strong>(기기에 따라 <strong>개인정보 보호 → 광고</strong>)에서 재설정하거나 삭제할 수 있습니다.</li>
+  </ul>
+
+  <h2>개발자가 받는 정보</h2>
+  <p>개발자는 사용자를 알아볼 수 있는 정보를 받지 않습니다. AdMob에서 광고 노출 수·수익 같은 <strong>집계된 통계</strong>만 볼 수 있습니다.</p>
+
+  <h2>보관과 삭제</h2>
+  <ul>
+    <li>Firebase 프로젝트의 데이터는 사용자가 Firebase 콘솔에서 직접 지우거나 프로젝트를 삭제할 수 있습니다.</li>
+    <li>앱을 삭제하면 폰에 저장된 설정·로그인 정보·사용량이 함께 지워집니다.</li>
+    <li>PC의 설정·로그인 정보·로그는 사용자 폴더의 <code>.remotehost</code> 폴더를 지우면 없어집니다.</li>
+    <li>구글 계정에서 Remote의 접근을 끊으려면 <a href="https://myaccount.google.com/connections">구글 계정의 타사 연결</a>에서 삭제하세요.</li>
+  </ul>
+
+  <h2>아동</h2>
+  <p>Remote는 13세 미만 어린이를 대상으로 하지 않습니다.</p>
+
+  <h2>방침의 변경</h2>
+  <p>방침이 바뀌면 이 페이지에 새 내용을 올리고 위의 시행일을 고칩니다.</p>
+
+  <h2>문의</h2>
+  <p>궁금한 점이나 요청은 <a href="https://github.com/BlackBuddle/Remote-releases/issues">GitHub Issues</a>에 남겨 주세요.</p>
+
+  <h2 lang="en">English summary</h2>
+  <div class="en" lang="en">
+    <p>Remote (the PC host and the Android app) is made by an individual developer, BlackBuddle, who runs no servers and receives no account, screen or input data. Sign-in and the PC list live in the Firebase project that each user creates. Screen and input travel only over an encrypted peer-to-peer WebRTC connection and are not stored. Google's STUN server sees device IP addresses when connections are set up, and the Windows host contacts GitHub to check for updates. The Android app shows Google AdMob banner ads; Google may collect the advertising ID, IP address, device and app information and ad interactions (see <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use our services</a>). The developer sees only aggregated AdMob statistics. Remote is not directed at children under 13. Contact: <a href="https://github.com/BlackBuddle/Remote-releases/issues">GitHub Issues</a>.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a href="./">Remote 소개</a> · <a href="https://github.com/BlackBuddle/Remote-releases/blob/main/LICENSE">사용 조건(LICENSE)</a>
+  </div>
+</footer>
+</body>
+</html>
